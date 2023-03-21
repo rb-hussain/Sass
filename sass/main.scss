@@ -5,8 +5,11 @@
 }
 // variable
 $bg-color: #245953;
+$bg-section-1: #E49393;
 $primary-color: #ffff;
-
+$dark-color: #000;
+$primary-font: Georgia, 'Times New Roman', Times, serif;
+$font-bold: 600;
 .main-heading{
     width: 100wh;
     height: 100vh;
@@ -18,8 +21,41 @@ $primary-color: #ffff;
 }
 // operators
 h1{
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: $primary-font;
     color: $primary-color;
     font-size: 3rem + 3rem;
 }
-
+p{
+    color: $primary-color;
+    font-family: $primary-font;
+    padding: 30px 200px;
+    text-align: center;
+    line-height: 1.6;
+}
+// nesting
+section{
+        height: 400px;
+        background-color: $bg-section-1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    h5{
+        font-size: 3rem + 3rem;
+        color: $primary-color;
+        &:hover{
+            cursor: pointer;
+            color:yellow;
+        }
+        &::after{
+            content: ':: After';
+        }
+    }
+    p{
+        font-family: $primary-font;
+        padding: 30px 0px;
+        &:hover{
+            cursor: pointer;
+            color: red;
+        }
+    }   
+}
