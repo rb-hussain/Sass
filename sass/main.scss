@@ -1,24 +1,26 @@
+@import "variable";
+@import "mixing";
+// 1 Operators
+// 2 Variables
+// 3 Nesting
+// 4 Mixing 
+// 5 Mixing with parameter
+// 6 Files partials
+
+
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 // variable
-$bg-color: #245953;
-$bg-section-1: #E49393;
 $primary-color: #ffff;
 $dark-color: #000;
 $primary-font: Georgia, 'Times New Roman', Times, serif;
 $font-bold: 600;
 
 // mixing 
-
-@mixin flexCenter{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
 
 @mixin sectionSetup ($section_bg) {
     height: 400px;
