@@ -7,11 +7,11 @@
 .main-heading {
   width: 100wh;
   height: 100vh;
+  background-color: #245953;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #245953;
 }
 
 h1 {
@@ -28,29 +28,51 @@ p {
   line-height: 1.6;
 }
 
-section {
+.card-section {
   height: 400px;
   background-color: #E49393;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-section h5 {
+.card-section h5 {
   font-size: 6rem;
   color: white;
 }
-section h5:hover {
+.card-section h5:hover {
   cursor: pointer;
   color: yellow;
 }
-section h5::after {
+.card-section h5::after {
   content: ":: After";
 }
-section p {
+.card-section p {
   font-family: Georgia, "Times New Roman", Times, serif;
   padding: 30px 0px;
 }
-section p:hover {
+.card-section p:hover {
   cursor: pointer;
   color: red;
+}
+
+.mixing-section {
+  height: 400px;
+  background-color: #245953;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.mixing-section h1 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: white;
+  font-size: 6rem;
+}
+.mixing-section p {
+  color: white;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  padding: 30px 200px;
+  text-align: center;
+  line-height: 1.6;
 }/*# sourceMappingURL=main.css.map */

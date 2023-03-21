@@ -10,14 +10,26 @@ $primary-color: #ffff;
 $dark-color: #000;
 $primary-font: Georgia, 'Times New Roman', Times, serif;
 $font-bold: 600;
-.main-heading{
-    width: 100wh;
-    height: 100vh;
+
+// mixing 
+
+@mixin flexCenter{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+@mixin sectionSetup ($section_bg) {
+    height: 400px;
+    background-color: $section_bg;
+    @include flexCenter;
+}
+.main-heading{
+    width: 100wh;
+    height: 100vh;
     background-color: $bg-color;
+    @include flexCenter;
 }
 // operators
 h1{
@@ -33,12 +45,8 @@ p{
     line-height: 1.6;
 }
 // nesting
-section{
-        height: 400px;
-        background-color: $bg-section-1;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+.card-section{
+        @include sectionSetup($bg-section-1);
     h5{
         font-size: 3rem + 3rem;
         color: $primary-color;
@@ -58,4 +66,22 @@ section{
             color: red;
         }
     }   
+}
+// mixing and parameter
+.mixing-section{
+
+    @include sectionSetup($bg-color);
+
+    h1{
+        font-family: $primary-font;
+        color: $primary-color;
+        font-size: 3rem + 3rem;
+    }
+    p{
+        color: $primary-color;
+        font-family: $primary-font;
+        padding: 30px 200px;
+        text-align: center;
+        line-height: 1.6;
+    }
 }
