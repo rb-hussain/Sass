@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main-heading {
+  width: 100wh;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #245953;
+}
+
+h1 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: white;
+  font-size: 6rem;
+}/*# sourceMappingURL=main.css.map */

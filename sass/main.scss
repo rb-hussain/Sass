@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+// variable
+$bg-color: #245953;
+$primary-color: #ffff;
+
+.main-heading{
+    width: 100wh;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $bg-color;
+}
+// operators
+h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: $primary-color;
+    font-size: 3rem + 3rem;
+}
+
